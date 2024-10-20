@@ -1,11 +1,22 @@
+import React from 'react';
+import Navbar from '../src/Sections/Navbar.jsx';
+import Footer from '../src/Sections/Footer.jsx';
+import LeftPanel from './Sections/LeftPanel.jsx';
+import MainContent from './Sections/MainContent.jsx';
+import RightPanel from './Sections/RightPanel.jsx';
+
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold text-green-800">
-        Hello Vite + Tailwind CSS!
-      </h1>
+    <div>
+      <Navbar />
+      <div className="flex flex-col md:flex-row mt-20">
+        <LeftPanel />
+        <MainContent />
+        <RightPanel />
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
