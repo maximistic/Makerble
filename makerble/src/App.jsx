@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from '../src/Sections/Navbar.jsx';
 import Footer from '../src/Sections/Footer.jsx';
 import LeftPanel from './Sections/LeftPanel.jsx';
